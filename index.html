@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Pitch - Your ultimate football destination for live match updates, breaking news, transfer rumours, and everything from the beautiful game.">
+  <title>The Pitch — Football News, Transfers & Match Updates</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⚽</div>
+        <span>The Pitch</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="news.html">News</a>
+        <a href="transfers.html">Transfers</a>
+        <a href="matches.html">Matches</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Breaking News
+        </div>
+        <h1>Your Front Row Seat to the <span class="highlight">Beautiful Game</span></h1>
+        <p>Live scores, breaking transfers, tactical analysis, and in-depth match coverage — everything a true football fan needs, all in one place.</p>
+        <div class="hero-actions">
+          <a href="news.html" class="btn btn-primary">📰 Latest News</a>
+          <a href="matches.html" class="btn btn-secondary">⚽ Live Scores</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Ticker -->
+  <div class="live-ticker">
+    <div class="ticker-wrap" id="ticker">
+      <!-- Ticker items rendered by JS -->
+    </div>
+  </div>
+
+  <!-- Featured Articles -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Featured <span class="accent">Stories</span></h2>
+          <p class="section-subtitle">Top stories from around the football world</p>
+        </div>
+        <a href="news.html" class="view-all">View All →</a>
+      </div>
+      <div class="card-grid" id="featuredGrid">
+        <!-- Cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="section" style="padding: 20px 0;">
+    <div class="container">
+      <div class="stats-bar reveal">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Articles Published</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Leagues Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Live Coverage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">Football Fans</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transfer Buzz -->
+  <section class="section" id="transferBuzz">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Transfer <span class="accent">Buzz</span></h2>
+          <p class="section-subtitle">Latest moves shaping the football landscape</p>
+        </div>
+        <a href="transfers.html" class="view-all">View All →</a>
+      </div>
+      <div class="transfer-list" id="homeTransfers">
+        <!-- Transfer cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Matches -->
+  <section class="section" id="upcomingMatches">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Match <span class="accent">Center</span></h2>
+          <p class="section-subtitle">Scores and schedules at a glance</p>
+        </div>
+        <a href="matches.html" class="view-all">View All →</a>
+      </div>
+      <div class="match-grid" id="homeMatches">
+        <!-- Match cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">⚽ <span>The Pitch</span></div>
+          <p>Your go-to source for everything football. We bring you closer to the game with breaking news, live scores, and expert analysis.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="transfers.html">Transfers</a></li>
+            <li><a href="matches.html">Matches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Leagues</h4>
+          <ul>
+            <li><a href="news.html">Premier League</a></li>
+            <li><a href="news.html">La Liga</a></li>
+            <li><a href="news.html">Serie A</a></li>
+            <li><a href="news.html">Bundesliga</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="news.html">Champions League</a></li>
+            <li><a href="news.html">World Cup</a></li>
+            <li><a href="transfers.html">Transfer News</a></li>
+            <li><a href="matches.html">Live Scores</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Pitch. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

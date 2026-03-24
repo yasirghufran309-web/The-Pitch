@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Live football scores, match results, and upcoming fixtures. Track every game across all major leagues with The Pitch.">
+  <title>Match Center — The Pitch</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⚽</div>
+        <span>The Pitch</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="transfers.html">Transfers</a>
+        <a href="matches.html" class="active">Matches</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>🏟️ Match <span class="text-green">Center</span></h1>
+      <p>Live scores, results, and upcoming fixtures from every major league</p>
+    </div>
+  </div>
+
+  <!-- Matches Content -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <!-- Match Tabs -->
+      <div class="tabs reveal" id="matchTabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="live">🔴 Live</button>
+        <button class="tab-btn" data-filter="upcoming">📅 Upcoming</button>
+        <button class="tab-btn" data-filter="completed">✅ Completed</button>
+      </div>
+
+      <!-- League Filters -->
+      <div class="filter-bar reveal" id="leagueFilters">
+        <button class="filter-btn active" data-filter="all">All Leagues</button>
+        <button class="filter-btn" data-filter="premier-league">Premier League</button>
+        <button class="filter-btn" data-filter="la-liga">La Liga</button>
+        <button class="filter-btn" data-filter="serie-a">Serie A</button>
+        <button class="filter-btn" data-filter="bundesliga">Bundesliga</button>
+        <button class="filter-btn" data-filter="champions-league">Champions League</button>
+      </div>
+
+      <!-- Match Grid -->
+      <div class="match-grid" id="matchGrid">
+        <!-- Match cards rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">⚽ <span>The Pitch</span></div>
+          <p>Your go-to source for everything football. We bring you closer to the game with breaking news, live scores, and expert analysis.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="transfers.html">Transfers</a></li>
+            <li><a href="matches.html">Matches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Leagues</h4>
+          <ul>
+            <li><a href="news.html">Premier League</a></li>
+            <li><a href="news.html">La Liga</a></li>
+            <li><a href="news.html">Serie A</a></li>
+            <li><a href="news.html">Bundesliga</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="news.html">Champions League</a></li>
+            <li><a href="news.html">World Cup</a></li>
+            <li><a href="transfers.html">Transfer News</a></li>
+            <li><a href="matches.html">Live Scores</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Pitch. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
