@@ -60,6 +60,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-green) var(--bg-secondary);
+  cursor: url('../images/football-cursor.svg') 16 16, auto;
 }
 
 body {
@@ -74,11 +75,17 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: url('../images/football-cursor-pointer.svg') 16 16, pointer;
 }
 
 ul, ol { list-style: none; }
 img { max-width: 100%; display: block; }
-button { cursor: pointer; border: none; font-family: inherit; }
+button { cursor: url('../images/football-cursor-pointer.svg') 16 16, pointer; border: none; font-family: inherit; }
+
+/* Football cursor for all interactive elements */
+a, button, .card, .match-card, .transfer-card, .filter-btn, .tab-btn, .nav-logo, input {
+  cursor: url('../images/football-cursor-pointer.svg') 16 16, pointer;
+}
 
 /* --- Scrollbar --- */
 ::-webkit-scrollbar { width: 6px; }
